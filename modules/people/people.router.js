@@ -17,6 +17,9 @@ PeopleRouter
 .route('/')
 .post(json, (req, res) => {
   // Add a new person to the queue.
+  const newPerson = req.body.name
+  People.enqueue(newPerson)
+  res.status(204).json(People.enqueue)
 
 })
 
