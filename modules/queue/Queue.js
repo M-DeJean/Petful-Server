@@ -38,25 +38,25 @@ class Queue {
     if (node === this.last) {
       this.last = null;
     }
-    return node.value;
+    return node;
   }
 
   show() {
     // Return the next item in the queue.
     const node = this.first
     const next = node.next
-    if (node === null || next === null) {
+    if (node === null) {
       return;
     }
 
-    return next;
+    return node
 
   }
 
   all() {
     // Return all items in the queue.
-    const node = this.first;
-    const array = [];
+    let node = this.first;
+    let array = [];
 
     while (node) {
       array.push(node.value);
