@@ -38,7 +38,7 @@ class Queue {
     if (node === this.last) {
       this.last = null;
     }
-    return node;
+    return node.value;
   }
 
   show() {
