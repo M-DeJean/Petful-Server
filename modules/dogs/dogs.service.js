@@ -12,7 +12,7 @@ store.dogs.forEach(dog => dogs.enqueue(dog))
 module.exports = {
   get() {
     // Return the pets next in line to be adopted.
-    return dogs.show().value
+    return dogs.show()
   },
 
   dequeue() {
