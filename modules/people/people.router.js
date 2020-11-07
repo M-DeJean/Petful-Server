@@ -1,4 +1,5 @@
 const express = require('express')
+const { people } = require('../../store')
 const json = require('body-parser').json()
 
 const People = require('./people.service')
@@ -15,11 +16,13 @@ PeopleRouter
 
 PeopleRouter
 .route('/')
-.post(json, (req, res) => {
+.patch(json, (req, res) => {
   // Add a new person to the queue.
-  const newPerson = req.body.name
-  People.enqueue(newPerson)
-  res.status(204).json(People.enqueue)
+  // const newPerson = req.body.name
+  // People.enqueue(newPerson)
+  // res.status(204).json(People.enqueue)
+  People.enqueue(People.dequeue())
+  res.status(200).json(People.get())
 
 })
 
