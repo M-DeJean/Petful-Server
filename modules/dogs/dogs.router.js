@@ -16,7 +16,7 @@ DogsRouter
 .route('/')
 .delete(json, (req, res) => {
   // Remove a pet from adoption.
-  Dogs.dequeue()
+  Dogs.enqueue(Dogs.dequeue())
   People.enqueue(People.dequeue())
   res.status(204).end()
   

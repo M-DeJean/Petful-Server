@@ -14,7 +14,11 @@ module.exports = {
     // Return the pets next in line to be adopted.
     return cats.show()
   },
+  enqueue(cat) {
 
+    //Add dog to the back of line
+    return cats.enqueue(cat)
+  },
   dequeue() {
     // Remove a pet from the queue.
     return cats.dequeue()
