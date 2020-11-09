@@ -18,19 +18,16 @@ PeopleRouter
 .route('/')
 .post(json, (req, res) => {
   const name = req.body
-  
+  console.log(req.body)
   res.status(201).json(People.enqueue(req.body.name))
 })
 
 PeopleRouter
 .route('/')
-.patch(json, (req, res) => {
-  // Add a new person to the queue.
-  // const newPerson = req.body.name
-  // People.enqueue(newPerson)
-  // res.status(204).json(People.enqueue)
-  People.enqueue(People.dequeue())
-  res.status(200).json(People.get())
+.delete(json, (req, res) => {
+  // Remove a person from the queue
+  
+  res.status(204).json(People.dequeue())
 
 })
 
