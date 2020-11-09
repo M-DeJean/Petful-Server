@@ -11,7 +11,7 @@ const morganOption = (NODE_ENV === 'production')
   ? 'tiny'
   : 'common';
 
-app.use(cors())
+app.use(cors({}))
 app.use(morgan(morganOption))
 
 app.use('/api/people', PeopleRouter)

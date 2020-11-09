@@ -1,7 +1,9 @@
 {
   "name": "petful-server",
   "scripts": {
-    "dev": "nodemon server"
+    "dev": "nodemon server",
+    "predeploy": "npm audit",
+    "deploy": "git push heroku master"
   },
   "engines": {
     "node": "12.18.3"
