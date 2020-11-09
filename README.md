@@ -4,15 +4,15 @@ Petful is an app that helps provide loving homes to animals in need. The Petful 
 
 ## API
 
-/api/dogs
+`/api/dogs`
 - GET - retreives a queue of all dogs
 - DELETE - removes the first dog and person from the front of the queue
 
-/api/cats
+`/api/cats`
 - GET - retreives a queue of all cats
 - DELETE - removes the first cat and person from the front of the queue
 
-/api/people
+`/api/people`
 - GET - retreives a queue of all people
 - DELETE - removes the first person from the front of the queue
 - POST - adds a new person to the queue
