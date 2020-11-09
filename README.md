@@ -19,9 +19,9 @@ Petful is an app that helps provide loving homes to animals in need. The Petful 
 
 ## STACK
 
-*JavaScript
-*Node
-*React
-*Express
-*HTML
-*CSS
+* JavaScript
+* Node
+* React
+* Express
+* HTML
+* CSS
