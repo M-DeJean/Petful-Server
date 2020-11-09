@@ -3,6 +3,9 @@
   "scripts": {
     "dev": "nodemon server"
   },
+  "engines": {
+    "node": "12.18.3"
+  },
   "dependencies": {
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
