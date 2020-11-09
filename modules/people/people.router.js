@@ -18,7 +18,6 @@ PeopleRouter
 .route('/')
 .post(json, (req, res) => {
   const name = req.body
-  console.log(req.body)
   res.status(201).json(People.enqueue(req.body.name))
 })
 
