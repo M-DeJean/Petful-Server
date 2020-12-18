@@ -16,7 +16,7 @@ module.exports = {
   },
   enqueue(cat) {
 
-    //Add dog to the back of line
+    //Add cat to the back of line
     return cats.enqueue(cat)
   },
   dequeue() {
