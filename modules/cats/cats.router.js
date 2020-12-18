@@ -8,14 +8,14 @@ const CatsRouter = express.Router()
 CatsRouter
   .route('/')
   .get((req, res) => {
-    // Return all pets currently up for adoption.
+    // Return all cats currently up for adoption.
     res.status(200).json(Cats.get())
   })
 
 CatsRouter
   .route('/')
   .delete(json, (req, res) => {
-    // Remove a pet from adoption.
+    // Remove a cat from adoption.
     Cats.enqueue(Cats.dequeue())
     People.enqueue(People.dequeue())
     res.status(204).end()
