@@ -35,7 +35,7 @@ PeopleRouter
     // Remove a person from the queue
     People.dequeue()
     Cats.dequeue()
-    res.status(204).json(People.dequeue())
+    res.status(204).end()
   })
 
 PeopleRouter
